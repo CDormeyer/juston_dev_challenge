@@ -103,6 +103,7 @@ global with sharing class RestWebservice {
         return meta;
     }
 
+    //Caluclates and returns the sum of all Integer within received List<Integer>
     public static Integer summarize(List<Integer> numbers){
         
         Integer sum = 0;
@@ -112,6 +113,7 @@ global with sharing class RestWebservice {
         return sum;
     }
     
+    //caluclates and returns Digitsum of received Integer
     public static Integer digitSum(Integer num){
         Integer digitSum = 0;
 
@@ -146,8 +148,8 @@ global with sharing class RestWebservice {
     }
     
     public class Result{
-		public Integer result {get;set;} 
-
+        public Integer result {get;set;} 
+        
 		public Result(Integer value) {
             result = value;
 		}
